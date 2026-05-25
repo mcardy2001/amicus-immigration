@@ -89,11 +89,42 @@
     <div class="container">
       <div class="talk-card">
         <div class="talk-card-intro">
-          <span class="eyebrow">Talk to a real person</span>
-          <h2>Speak with an immigration agent — right now, from any device.</h2>
-          <p>Whether you&rsquo;re a foreign worker exploring your options or a Canadian employer with a role to fill, our team is ready to help. Pick the way that works best for the device you&rsquo;re on — your phone, your laptop, or your Mac — and we&rsquo;ll be on the other end.</p>
-          <div class="talk-availability">Live agent typically available Mon&ndash;Fri, 9 AM &ndash; 6 PM ET</div>
+          <span class="eyebrow">Talk to an agent</span>
+          <h2>Get immigration answers right now &mdash; from any device.</h2>
+          <p>Whether you&rsquo;re a foreign worker exploring your options or a Canadian employer with a role to fill, our AI assistant Amie can answer most questions instantly &mdash; or connect you with a real person on whichever channel you prefer.</p>
         </div>
+
+        <!-- AI primary -->
+        <div class="talk-ai-row">
+          <div class="talk-ai-avatar" aria-hidden="true">A</div>
+          <div class="talk-ai-text">
+            <h3>Chat with Amie, our AI immigration assistant</h3>
+            <p>Instant answers about costs, timelines, eligibility and jobs &mdash; any time, any device. If you need more, Amie hands you off to our team.</p>
+          </div>
+          <button type="button" class="btn btn-primary talk-ai-start" data-chat-start>Start chat &rarr;</button>
+        </div>
+
+        <!-- The chat panel itself (hidden until activated) -->
+        <div class="ai-chat" id="ai-chat" hidden role="region" aria-label="AI chat with Amie">
+          <div class="ai-chat-header">
+            <div class="ai-chat-avatar" aria-hidden="true">A</div>
+            <div>
+              <strong>Amie</strong>
+              <span class="ai-chat-status">AI assistant &middot; Online</span>
+            </div>
+            <button type="button" class="ai-chat-close" data-chat-close aria-label="Close chat">&times;</button>
+          </div>
+          <div class="ai-chat-body" aria-live="polite"></div>
+          <div class="ai-chat-suggestions" aria-label="Suggested questions"></div>
+          <form class="ai-chat-form" autocomplete="off">
+            <input type="text" placeholder="Ask Amie anything about immigrating to Canada&hellip;" aria-label="Your message" />
+            <button type="submit" aria-label="Send message">&uarr;</button>
+          </form>
+          <div class="ai-chat-disclosure">Amie is an automated assistant. For complex situations a real consultant will help &mdash; just ask.</div>
+        </div>
+
+        <div class="talk-divider"><span>Or talk to a real person</span></div>
+
         <div class="talk-options">
           <a class="talk-option talk-option--call" href="tel:+15194760734">
             <div class="talk-option-icon" aria-hidden="true">
@@ -334,5 +365,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>
