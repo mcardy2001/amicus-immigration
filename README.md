@@ -25,9 +25,9 @@ Built as a static, single-folder site — no build step, no framework. Just open
 1. **Activate the contact form.** Open `contact.html` and replace `YOUR_FORMSPREE_ID` with the form ID you get from [Formspree](https://formspree.io) (free tier).
 2. **Confirm phone & email.** The site uses placeholder contact details:
    - Phone: `(905) 999-9999` — replace in the footer of every page and in `contact.html`.
-   - Email: `info@amicusimmigration.ca` — replace if different.
-3. **(Optional) Add a real logo.** The header currently uses a typographic "A" mark. If you have a logo PNG/SVG, drop it into `images/` and swap the `.brand-mark` element for an `<img>`.
-4. **(Optional) Add a real founder photo.** `about.html` uses a stylized SVG placeholder. To use a real photo, replace the `.about-portrait` `<svg>` block with `<img src="images/dinshaw.jpg" alt="Dinshaw Engineer" />`.
+   - Email: `dan.amicus@gmail.com` — replace if different.
+3. **Add Dinshaw's founder photo.** The about page is already wired to display `images/dinshaw.jpg`. Save the headshot into the project's `images/` folder using the exact filename **`dinshaw.jpg`**. Square or portrait-oriented photos look best — the image is auto-cropped to a square with the focal point biased toward the top so faces stay in frame. If your photo is a `.png`, either rename it to `.jpg` (browsers don't actually care about the extension) or edit the `src` attribute in `about.html` to match.
+4. **(Optional) Add a real logo.** The header currently uses a typographic "A" mark. If you have a logo PNG/SVG, drop it into `images/` and swap the `.brand-mark` element for an `<img>`.
 
 A simple find-and-replace across all `.html` files will handle the phone and email updates in one pass.
 
@@ -92,4 +92,6 @@ All copy is right inside the `.html` files — no CMS, no JSON. Open any page in
 
 ## Disclaimer about the placeholder copy
 
-The testimonials, statistics ("10+ years", "500+ placements", etc.) and contact details on this site are sensible placeholders based on your brief. Please review and update them with real numbers and approved client quotes before going live, and make sure the CICC license number and any legally required disclosures are added.
+The featured testimonial on the home page from **Stephanie Duchesne** (August 2020) is real and was provided from Dan's LinkedIn recommendations. **One word was edited:** her original text described Dan as an "immigration lawyer" — this was changed to "immigration consultant" because Dan is a Registered Canadian Immigration Consultant (RCIC), not a lawyer, and the distinction is regulated in Canada by the CICC. Please review and confirm this edit is acceptable, and consider asking Stephanie's permission to use the (lightly edited) recommendation publicly on the site.
+
+The remaining four testimonials below Stephanie's, the "500+ placements" stat, and the placeholder phone number `(905) 999-9999` are sensible placeholders based on your brief. Please review and update them with real numbers and approved client quotes before going live, and make sure the CICC license number and any legally required disclosures are added. The founding year (2008) is treated as the source of truth for the experience claims.
