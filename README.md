@@ -28,6 +28,10 @@ Built as a static, single-folder site — no build step, no framework. Just open
    - Email: `dan.amicus@gmail.com`
 3. **Add Dinshaw's founder photo.** The about page is already wired to display `images/dinshaw.jpg`. Save the headshot into the project's `images/` folder using the exact filename **`dinshaw.jpg`**. Square or portrait-oriented photos look best — the image is auto-cropped to a square with the focal point biased toward the top so faces stay in frame. If your photo is a `.png`, either rename it to `.jpg` (browsers don't actually care about the extension) or edit the `src` attribute in `about.html` to match.
 4. **(Optional) Add a real logo.** The header currently uses a typographic "A" mark. If you have a logo PNG/SVG, drop it into `images/` and swap the `.brand-mark` element for an `<img>`.
+5. **Confirm the "Talk to a real person" section on the home page.** This section gives visitors three ways to reach an agent from any device:
+   - **Call us now** — uses the office number above. Works as tap-to-call on phones and opens FaceTime/Skype/your default calling app on Macs and PCs.
+   - **WhatsApp** — currently points to `wa.me/15194760734` (the office number). If WhatsApp Business uses a different number, edit the `talk-option--whatsapp` link in `index.html` (the `wa.me/...` URL). The pre-filled message is editable via the `?text=` parameter on the same URL.
+   - **Book a video call** — currently links to the contact page. To enable real self-serve scheduling, sign up for a free [Calendly](https://calendly.com) or [Cal.com](https://cal.com) account, create a "20-minute consultation" event, and replace `href="contact.html"` on the `talk-option--book` link with your booking URL. (Both services offer free tiers and auto-integrate with Google Calendar / Zoom / Meet.)
 
 A simple find-and-replace across all `.html` files will handle the phone and email updates in one pass.
 
