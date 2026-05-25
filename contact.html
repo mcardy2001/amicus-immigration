@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Amicus Immigration Consultants Canada Inc.</title>
+  <meta name="description" content="Contact Amicus Immigration Consultants Canada Inc. in Mississauga, Ontario. Book a free, no-obligation consultation about moving to Canada for work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">A</div>
+        <div>
+          <span class="brand-name">Amicus Immigration</span>
+          <span class="brand-tag">Consultants Canada Inc.</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Free Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Let&rsquo;s start with a free conversation.</h1>
+      <p>Tell us a little about your situation and what you&rsquo;re hoping for. We&rsquo;ll get back to you within one business day — usually much sooner. No pressure, no obligation, and no cost to talk things through.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div>
+          <h2>Book your free consultation</h2>
+          <p>Fill in the form below and a member of our team will reach out to schedule a 20-minute call.</p>
+
+          <!-- ============================================================
+               Formspree integration
+               To activate this form:
+               1. Create a free account at https://formspree.io
+               2. Create a new form and copy your form ID (e.g. "xyzabcde")
+               3. Replace YOUR_FORMSPREE_ID below with that ID
+               ============================================================ -->
+          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <div class="form-row">
+              <div>
+                <label for="firstName">First name *</label>
+                <input id="firstName" name="firstName" type="text" required />
+              </div>
+              <div>
+                <label for="lastName">Last name *</label>
+                <input id="lastName" name="lastName" type="text" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div>
+                <label for="phone">Phone / WhatsApp</label>
+                <input id="phone" name="phone" type="tel" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="country">Country of residence</label>
+                <input id="country" name="country" type="text" />
+              </div>
+              <div>
+                <label for="industry">Industry of interest</label>
+                <select id="industry" name="industry">
+                  <option value="">Select an option…</option>
+                  <option>Construction &amp; Trades</option>
+                  <option>Hotels &amp; Hospitality</option>
+                  <option>Restaurants &amp; Food Service</option>
+                  <option>Trucking &amp; Logistics</option>
+                  <option>Caregiving &amp; Personal Support</option>
+                  <option>Other / not sure yet</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="pathway">Are you applying as…</label>
+            <select id="pathway" name="pathway">
+              <option value="">Select an option…</option>
+              <option>A foreign worker</option>
+              <option>A Canadian employer</option>
+              <option>A family member sponsoring someone</option>
+              <option>I&rsquo;m not sure yet</option>
+            </select>
+
+            <label for="message">Tell us about your situation *</label>
+            <textarea id="message" name="message" required placeholder="Briefly: your work background, where you&rsquo;d like to live, family situation, and any deadlines."></textarea>
+
+            <label class="consent">
+              <input type="checkbox" name="consent" required />
+              <span>I consent to Amicus Immigration Consultants Canada Inc. contacting me about my inquiry. We will never share your information.</span>
+            </label>
+
+            <!-- Honeypot to deter bots -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <button type="submit" class="btn btn-primary" style="width:100%">Send my inquiry</button>
+          </form>
+        </div>
+
+        <!-- Direct contact -->
+        <div>
+          <div class="contact-card">
+            <h3>Visit us</h3>
+            <p><strong>Amicus Immigration Consultants Canada Inc.</strong></p>
+            <p>48 Village Centre Place, Suite 200<br/>Mississauga, ON L4Z 1V9</p>
+            <p style="margin-top:0.75rem"><a href="https://www.google.com/maps?q=48+Village+Centre+Pl,+Mississauga,+ON+L4Z+1V9" target="_blank" rel="noopener">Get directions &rarr;</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Call or email</h3>
+            <p><strong>Phone:</strong> <a href="tel:+19059999999">(905) 999-9999</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@amicusimmigration.ca">info@amicusimmigration.ca</a></p>
+            <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--color-text-muted)">We reply to most messages within one business day.</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Office hours</h3>
+            <p>Monday – Friday: 9:00 AM – 6:00 PM ET</p>
+            <p>Saturday: by appointment</p>
+            <p>Sunday: closed</p>
+          </div>
+
+          <div class="contact-card" style="padding:0;overflow:hidden">
+            <iframe
+              title="Amicus Immigration office location"
+              src="https://www.google.com/maps?q=48+Village+Centre+Pl,+Mississauga,+ON+L4Z+1V9&output=embed"
+              width="100%" height="260" style="border:0;display:block"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Amicus Immigration Consultants Canada Inc.</h4>
+          <p>Helping foreign workers and families build new lives in Canada with affordable fees and a kind, considerate approach.</p>
+          <p>48 Village Centre Pl, Suite 200<br/>Mississauga, ON L4Z 1V9</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="about.html">About</a></p>
+          <p><a href="resources.html">Resources</a></p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <p><a href="services.html#construction">Construction</a></p>
+          <p><a href="services.html#hospitality">Hotels &amp; Hospitality</a></p>
+          <p><a href="services.html#foodservice">Food Service</a></p>
+          <p><a href="services.html#pr">Permanent Residence</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="contact.html">Book a consultation</a></p>
+          <p><a href="mailto:info@amicusimmigration.ca">info@amicusimmigration.ca</a></p>
+          <p><a href="tel:+19059999999">(905) 999-9999</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Amicus Immigration Consultants Canada Inc. All rights reserved.</span>
+        <span>Licensed under the College of Immigration and Citizenship Consultants (CICC).</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
