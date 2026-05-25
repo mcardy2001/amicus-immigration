@@ -33,6 +33,39 @@ Built as a static, single-folder site — no build step, no framework. Just open
    - **WhatsApp** — currently points to `wa.me/15194760734` (the office number). If WhatsApp Business uses a different number, edit the `talk-option--whatsapp` link in `index.html` (the `wa.me/...` URL). The pre-filled message is editable via the `?text=` parameter on the same URL.
    - **Book a video call** — currently links to the contact page. To enable real self-serve scheduling, sign up for a free [Calendly](https://calendly.com) or [Cal.com](https://cal.com) account, create a "20-minute consultation" event, and replace `href="contact.html"` on the `talk-option--book` link with your booking URL. (Both services offer free tiers and auto-integrate with Google Calendar / Zoom / Meet.)
 
+## SEO setup
+
+The site is built with SEO best practices baked in:
+
+- **Per-page title and meta description** tuned for primary keywords ("Canadian immigration consultants Mississauga", "foreign worker visa Canada", "RCIC Mississauga", "LMIA consultant", etc.)
+- **Open Graph + Twitter Card** meta tags on every page for clean LinkedIn / Facebook / X share previews
+- **Canonical URLs** on every page (currently pointing at `https://amicusimmigration.ca/`)
+- **Structured data (JSON-LD)** for rich Google results:
+  - Home page: `ProfessionalService` with full business details, services catalog and Stephanie's review
+  - About page: `Person` schema for Dan Engineer (helps "Dan Engineer RCIC" knowledge-panel searches)
+  - Resources page: `FAQPage` so the 9 FAQs are eligible to appear as featured snippets in Google
+  - Contact page: `ContactPage`
+- **robots.txt** (allows all crawlers, points at sitemap)
+- **sitemap.xml** (all 5 pages with priorities and change frequencies)
+- **Favicon** (`favicon.svg`, vector, sharp at any size)
+- **Open Graph share image** (`images/og-image.svg`, 1200&times;630)
+- **`theme-color`** meta tag for branded mobile browser chrome
+- **Semantic HTML5** throughout (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`)
+- **Single H1 per page** with target keyword phrasing
+- **Fast load** (no JS framework, no CDN libraries; LCP should be well under 2.5s)
+- **Mobile-friendly** responsive layout (Google's #1 ranking factor for mobile-first index)
+- **HTTPS** (automatic on GitHub Pages and any modern host)
+
+**Before going live, do one important global find-and-replace:** every canonical, OG and sitemap URL currently uses `https://amicusimmigration.ca/`. If your live domain is different (e.g. `https://mcardy2001.github.io/amicus-immigration/`), use VS Code's "Find in Files" (&#8984;+Shift+F) to replace that base URL across all `.html` files, `robots.txt` and `sitemap.xml` in one pass.
+
+**After going live, do these one-time tasks:**
+
+1. **Submit your sitemap to Google.** Sign up for [Google Search Console](https://search.google.com/search-console), add your domain, verify ownership (easiest: TXT record on your DNS), then submit `sitemap.xml`. Google will start crawling within a day or two.
+2. **Submit to Bing Webmaster Tools** ([bing.com/webmasters](https://www.bing.com/webmasters)) the same way. Bing also powers DuckDuckGo and ChatGPT search.
+3. **Create a Google Business Profile** for the Mississauga office ([business.google.com](https://business.google.com)). For a local business this is bigger than the website itself for local search rankings. List the office address, phone, hours, service area (Canada-wide), and add photos.
+4. **Test your structured data.** Paste each URL into Google's [Rich Results Test](https://search.google.com/test/rich-results) to confirm Google can read the FAQPage, ProfessionalService and Person schemas. If everything's green you're eligible for rich results.
+5. **(Optional) Add Google Analytics 4 or Plausible.** Pop the snippet into a `<script>` at the bottom of each page. Plausible is privacy-friendly and GDPR/PIPEDA-compliant out of the box (~$9/mo); GA4 is free but heavier.
+
 ## About "Amie", the AI chat assistant
 
 The AI chat on the home page is **Amie** — a client-side intent-matching assistant defined entirely in `js/chatbot.js`. It works immediately on GitHub Pages with no API keys, no backend, and no monthly fees. The knowledge base lives in the `INTENTS` array at the top of that file — each intent has keyword patterns, a response, and follow-up suggestions. Edit, add, or remove intents freely; changes take effect on the next page load.

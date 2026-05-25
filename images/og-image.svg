@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdfaf6"/>
+      <stop offset="100%" stop-color="#fbe7eb"/>
+    </linearGradient>
+    <linearGradient id="mtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9b0a23"/>
+      <stop offset="100%" stop-color="#c8102e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Mountains -->
+  <polygon points="0,500 200,300 400,420 600,260 800,380 1000,280 1200,400 1200,630 0,630" fill="#3a2d22" opacity="0.18"/>
+  <polygon points="0,630 250,420 500,560 750,400 1000,540 1200,440 1200,630" fill="url(#mtn)" opacity="0.95"/>
+
+  <!-- Brand mark -->
+  <rect x="80" y="80" width="100" height="100" rx="20" fill="#c8102e"/>
+  <text x="130" y="158" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="68" font-weight="700">A</text>
+
+  <!-- Brand name -->
+  <text x="210" y="125" font-family="Georgia, serif" font-size="34" font-weight="600" fill="#1f1a14">Amicus Immigration</text>
+  <text x="210" y="160" font-family="-apple-system, Helvetica, sans-serif" font-size="22" fill="#5a5247">Consultants Canada Inc.</text>
+
+  <!-- Headline -->
+  <text x="80" y="320" font-family="Georgia, serif" font-size="64" font-weight="600" fill="#1f1a14">Your trusted path to</text>
+  <text x="80" y="395" font-family="Georgia, serif" font-size="64" font-weight="600" fill="#c8102e">a new life in Canada.</text>
+
+  <!-- Subhead -->
+  <text x="80" y="455" font-family="-apple-system, Helvetica, sans-serif" font-size="26" fill="#5a5247">Foreign worker &amp; family immigration since 2008.</text>
+  <text x="80" y="490" font-family="-apple-system, Helvetica, sans-serif" font-size="26" fill="#5a5247">Affordable. Kind. Coast to coast.</text>
+
+  <!-- Maple leaf -->
+  <g transform="translate(950 200) scale(2.5)">
+    <path d="M50 0 L57 18 L78 12 L67 33 L88 38 L70 50 L82 70 L60 64 L58 86 L50 70 L42 86 L40 64 L18 70 L30 50 L12 38 L33 33 L22 12 L43 18 Z" fill="#c8102e" stroke="#9b0a23" stroke-width="1.5"/>
+    <line x1="50" y1="50" x2="50" y2="92" stroke="#9b0a23" stroke-width="3"/>
+  </g>
+</svg>
