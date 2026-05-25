@@ -360,6 +360,66 @@ img { max-width: 100%; display: block; }
   font-weight: 500;
 }
 
+/* Social strip */
+.social-strip {
+  background: var(--color-surface-alt);
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--color-border);
+}
+.social-strip .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.social-strip-label {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1.15rem;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.social-link:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+  color: var(--color-accent-dark);
+}
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.social-link--facebook:hover { color: #1877f2; border-color: #1877f2; }
+.social-link--instagram:hover {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
+}
+.social-link--instagram:hover svg { color: #fff; }
+
 /* CTA banner */
 .cta-banner {
   display: grid;
