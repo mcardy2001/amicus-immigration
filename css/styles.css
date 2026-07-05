@@ -116,14 +116,11 @@ img { max-width: 100%; display: block; }
 }
 .brand:hover { text-decoration: none; }
 .brand-mark {
-  width: 40px; height: 40px;
-  display: grid; place-items: center;
-  background: var(--color-accent);
-  color: #fff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
 }
 .brand-name {
   font-family: var(--font-heading);
