@@ -14,7 +14,9 @@
   <link rel="canonical" href="https://amicusimmigration.ca/" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="alternate icon" type="image/x-icon" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website" />
@@ -22,7 +24,7 @@
   <meta property="og:title" content="Canadian Immigration Consultants in Mississauga | Amicus Immigration" />
   <meta property="og:description" content="Helping foreign workers and families move to Canada for construction, hospitality, food service and trades since 2008. Affordable, kind, RCIC-licensed." />
   <meta property="og:url" content="https://amicusimmigration.ca/" />
-  <meta property="og:image" content="https://amicusimmigration.ca/images/og-image.svg" />
+  <meta property="og:image" content="https://amicusimmigration.ca/images/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="en_CA" />
@@ -31,7 +33,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Canadian Immigration Consultants in Mississauga | Amicus" />
   <meta name="twitter:description" content="Helping foreign workers and families move to Canada since 2008. Affordable, kind, RCIC-licensed." />
-  <meta name="twitter:image" content="https://amicusimmigration.ca/images/og-image.svg" />
+  <meta name="twitter:image" content="https://amicusimmigration.ca/images/og-image.png" />
 
   <!-- Fonts + styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,8 +51,8 @@
     "alternateName": "Amicus Immigration",
     "description": "Mississauga-based Registered Canadian Immigration Consultants (RCIC) helping foreign workers and families move to Canada for construction, hospitality, food service and trades since 2008.",
     "url": "https://amicusimmigration.ca/",
-    "logo": "https://amicusimmigration.ca/images/amicus-logo.png",
-    "image": "https://amicusimmigration.ca/images/og-image.svg",
+    "logo": "https://amicusimmigration.ca/favicon.png",
+    "image": "https://amicusimmigration.ca/images/og-image.png",
     "telephone": "+1-519-476-0734",
     "email": "dan.amicus@gmail.com",
     "foundingDate": "2008",
@@ -117,12 +119,12 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="brand">
-        <img class="brand-mark" src="images/amicus-logo.png" alt="Amicus Immigration logo" width="48" height="48" />
-        <div>
-          <span class="brand-name">Amicus Immigration</span>
-          <span class="brand-tag">Consultants Canada Inc.</span>
-        </div>
+      <a href="index.html" class="brand" aria-label="Amicus Immigration Consultants Canada Inc. — Home">
+        <img class="brand-mark" src="images/amicus-logo.png" alt="" width="52" height="52" />
+        <span class="brand-text">
+          <span class="brand-wordmark"><span class="brand-A">A</span><span class="brand-micus">MICUS</span></span>
+          <span class="brand-tag">Immigration Consultants Canada Inc.</span>
+        </span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
       <nav class="nav" aria-label="Primary">
@@ -131,7 +133,7 @@
         <a href="about.html">About</a>
         <a href="resources.html">Resources</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html" class="btn btn-primary">Fee-Based Consultation</a>
+        <a href="contact.html" class="btn btn-primary">Consultation</a>
       </nav>
     </div>
   </header>
@@ -144,7 +146,7 @@
         <h1>Your trusted partners on the journey to a new life in Canada.</h1>
         <p class="lead">Since 2008, Amicus has helped foreign workers and families move to Canada for jobs in construction, hotels, restaurants and skilled trades — with affordable fees, a kind approach, and deep knowledge of Canadian immigration policy.</p>
         <div class="hero-cta">
-          <a href="contact.html" class="btn btn-primary">Book a Fee-Based Consultation</a>
+          <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
           <a href="services.html" class="btn btn-outline">Explore Our Services</a>
         </div>
         <div class="hero-trust">
@@ -154,35 +156,7 @@
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <!-- Inline SVG: warm illustration of mountains + maple leaf -->
-        <svg viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#fff3d6"/>
-              <stop offset="100%" stop-color="#fbe7eb"/>
-            </linearGradient>
-            <linearGradient id="mtn" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#3a2d22"/>
-              <stop offset="100%" stop-color="#7a5a3f"/>
-            </linearGradient>
-            <linearGradient id="mtn2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#9b0a23"/>
-              <stop offset="100%" stop-color="#c8102e"/>
-            </linearGradient>
-          </defs>
-          <rect width="320" height="400" fill="url(#sky)"/>
-          <!-- sun -->
-          <circle cx="220" cy="110" r="45" fill="#fff" opacity="0.85"/>
-          <!-- back mountains -->
-          <polygon points="0,300 80,160 160,260 240,140 320,260 320,400 0,400" fill="url(#mtn)" opacity="0.9"/>
-          <!-- front mountain (red) -->
-          <polygon points="0,400 90,220 200,360 320,240 320,400" fill="url(#mtn2)"/>
-          <!-- maple leaf -->
-          <g transform="translate(110 60) scale(1.2)">
-            <path d="M50 0 L57 18 L78 12 L67 33 L88 38 L70 50 L82 70 L60 64 L58 86 L50 70 L42 86 L40 64 L18 70 L30 50 L12 38 L33 33 L22 12 L43 18 Z" fill="#c8102e" stroke="#9b0a23" stroke-width="1.2"/>
-            <line x1="50" y1="50" x2="50" y2="92" stroke="#9b0a23" stroke-width="3"/>
-          </g>
-        </svg>
+        <img src="images/canada-hero.jpg" alt="" width="1200" height="1500" loading="eager" />
       </div>
     </div>
   </section>
@@ -407,7 +381,7 @@
           <h2>Ready to start your Canadian journey?</h2>
           <p>Book a free, no-obligation consultation. We&rsquo;ll listen to your situation and tell you exactly what&rsquo;s possible.</p>
         </div>
-        <a href="contact.html" class="btn btn-light">Book Fee-Based Consultation</a>
+        <a href="contact.html" class="btn btn-light">Book Consultation</a>
       </div>
     </div>
   </section>
